@@ -8,14 +8,10 @@ const sessionModel = require("./models/session");
 
 let app = express();
 
-// const mongo_url = process.env.MONGODB_URL;
-// const mongo_user = process.env.MONGODB_USER;
-// const mongo_password = process.env.MONGODB_PASSWORD;
-//
-// const url = "mongodb+srv://"+mongo_user+":"+mongo_password+"@"+mongo_url+"/shoppingdatabase?retryWrites=true&w=majority"
-const MONGODB_USER = process.env.MONGODB_USER;
-const MONGODB_PASSWORD = process.env.MONGODB_PASSWORD;
-const url = `mongodb+srv://${MONGODB_USER}:${MONGODB_PASSWORD}@testiklusteri.bwokbqd.mongodb.net/shoppingdb?retryWrites=true&w=majority`
+const mongo_url = process.env.MONGODB_URL;
+const mongo_user = process.env.MONGODB_USER;
+const mongo_password = process.env.MONGODB_PASSWORD;
+const url = "mongodb+srv://"+mongo_user+":"+mongo_password+"@"+mongo_url+"/shoppingdatabase?retryWrites=true&w=majority"
 
 app.use(express.json());
 
